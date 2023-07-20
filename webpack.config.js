@@ -12,15 +12,25 @@ module.exports = {
       template: './src/index.html',
     }),
   ],
-  mode: 'development',
+  mode: 'production',
   devServer: {
     static: './dist',
+    watchContentBase: true,
   },
   module: {
     rules: [
       {
         test: /\.css$/i,
-        use: ['style-loader', 'css-loader'],
+        include: path.resolve(__dirname, 'src'),
+        use: ['style-loader', 'css-loader', 'postcss-loader'],
+      },
+      {
+        test: /\.js$/i,
+        include: path.resolve(__dirname, 'src'),
+        use: {
+          loader: 'babel-loader',
+          options: { presets: ['@babel/preset-env'] },
+        },
       },
     ],
   },
