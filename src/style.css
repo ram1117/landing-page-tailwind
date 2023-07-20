@@ -1,6 +1,7 @@
-body{
+body {
   background: aquamarine;
 }
-body>h1{
+
+body > h1 {
   text-align: center;
 }
