@@ -6,7 +6,7 @@ module.exports = {
   output: {
     filename: 'main.js',
     path: path.resolve(__dirname, 'dist'),
-    assetModuleFilename: 'src/images/Ruby_logo.svg'
+    assetModuleFilename: 'src/images/Ruby_logo.svg',
   },
   plugins: [
     new HtmlWebpackPlugin({

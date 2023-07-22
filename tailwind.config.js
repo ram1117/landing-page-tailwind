@@ -8,7 +8,7 @@ module.exports = {
       },
       scale: {
         '-100': '-1',
-    }
+      },
     },
     screens: {
       sm: '480px',
@@ -18,17 +18,18 @@ module.exports = {
     },
     colors: {
       white: '#ffffff',
-      black:'#000000',
+      black: '#000000',
       blue: '#a0d4e2',
-      aqua:'#5ce1e6',
+      aqua: '#5ce1e6',
       rose: '#c596a1',
       orange: '#d89561',
-      grey:'#808080',
+      grey: '#808080',
     },
-    height:{
-      "45v":'50vh',
-      "90v":'90vh'
-    }
+    height: {
+      '30v': '30vh',
+      '45v': '50vh',
+      '90v': '90vh',
+    },
   },
   plugins: [],
 };

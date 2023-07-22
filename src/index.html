@@ -7,34 +7,69 @@
     <title>Rails Meet</title>
   </head>
   <body>
-    <nav>
+    <div
+      id="burger-container"
+      class="absolute top-5 left-5 w-full sm:hidden"
+    >
+      <button id="burger-menu" class="sm:hidden">
+        <svg
+          class="stroke-black fill-black"
+          width="30"
+          height="30"
+          viewBox="0 0 24 24"
+        >
+          <path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z" />
+        </svg>
+      </button>
+    </div>
+    <nav class="hidden sm:block">
       <ul
         id="navigation-list"
-        class="list-none flex flex-row justify-around fixed w-screen py-5 bg-black text-aqua"
+        class="list-none flex flex-row justify-around fixed w-screen py-5 bg-black text-white"
       >
         <li>
-          <a href="#section-hero" class="scroll-smooth font-bold">Hello</a>
+          <a
+            href="#section-hero"
+            class="scroll-smooth font-bold hover:text-aqua"
+            >Hello</a
+          >
         </li>
         <li>
-          <a href="#section-intro" class="scroll-smooth font-bold">About</a>
+          <a
+            href="#section-intro"
+            class="scroll-smooth font-bold hover:text-aqua"
+            >About</a
+          >
         </li>
         <li>
-          <a href="#section-events" class="scroll-smooth font-bold">Events</a>
+          <a
+            href="#section-events"
+            class="scroll-smooth font-bold hover:text-aqua"
+            >Events</a
+          >
         </li>
         <li>
-          <a href="#section-stats" class="scroll-smooth font-bold">Stats</a>
+          <a
+            href="#section-stats"
+            class="scroll-smooth font-bold hover:text-aqua"
+            >Stats</a
+          >
         </li>
         <li>
-          <a href="#section-contact" class="scroll-smooth font-bold">Contact</a>
+          <a
+            href="#section-contact"
+            class="scroll-smooth font-bold hover:text-aqua"
+            >Contact</a
+          >
         </li>
       </ul>
     </nav>
     <section
       id="section-hero"
-      class="w-screen flex flex-col md:flex-row justify-center py-24 md:py-4"
+      class="w-screen flex flex-col md:flex-row justify-center py-24 md:py-52"
     >
       <div
-        class="flex flex-col justify-center items-center md:items-start w-full md:w-1/2 pt-20 px-5 md:px-10 xl:px-20 md:h-90v"
+        class="flex flex-col justify-center items-center md:items-start w-full md:w-1/2 px-5 md:px-10 xl:px-20"
       >
         <p
           class="text-2xl font-medium p-0 my-2 w-full text-center md:text-left"
@@ -67,10 +102,10 @@
     </section>
     <section
       id="section-intro"
-      class="bg-black text-white w-screen flex flex-col md:flex-row justify-center py-16 md:py-4"
+      class="bg-black text-white w-screen flex flex-col md:flex-row justify-center py-16 md:py-40"
     >
       <div
-        class="flex flex-col justify-center items-center md:items-start w-full md:w-1/2 pt-20 px-5 md:px-10 xl:px-20 md:h-90v"
+        class="flex flex-col justify-center items-center md:items-start w-full md:w-1/2 pt-20 px-5 md:px-10 xl:px-20"
       >
         <h2 class="text-2xl md:text-5xl">
           Connect with like-minded developers
@@ -209,7 +244,7 @@
     </section>
     <section
       id="section-contact"
-      class="w-screen flex flex-col md:flex-row justify-center"
+      class="w-screen flex flex-col md:flex-row justify-center md:my-16"
     >
       <div
         class="flex flex-col justify-center items-center md:items-start w-full md:w-1/2 pt-20 px-5 md:px-10 xl:px-16"
@@ -231,7 +266,7 @@
         </button>
       </div>
       <div
-        class="flex flex-col justify-center items-center md:items-start w-full md:w-1/2 pt-20 px-5 md:px-10 xl:px-20 md:h-90v"
+        class="flex flex-col justify-center items-center md:items-start w-full md:w-1/2 pt-20 px-5 md:px-10 xl:px-20"
       >
         <div class="my-8">
           <h5
@@ -250,7 +285,8 @@
             E-MAIL
           </h5>
           <h6 class="text-2xl text-center md:text-left font-medium mb-4">
-            rubyeventberlin2023@rubyorg.com
+            rubyeventberlin2023 <br />
+            @rubyorg.com
           </h6>
         </div>
         <div class="my-8 w-1/3">
