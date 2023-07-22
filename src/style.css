@@ -4,12 +4,21 @@
 @tailwind utilities;
 /* stylelint-enable */
 
-#hero {
+#section-hero {
   background: linear-gradient(
     110deg,
     #ffffff 5%,
     #a0d4e2 30%,
     #c596a1 85%,
     #d89561 100%
+  );
+}
+
+#section-events{
+  background: linear-gradient(
+    110deg,
+    #7dc1d5 25%,
+    #20768e 55%,
+    #c596a1 100%
   );
 }

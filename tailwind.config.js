@@ -6,6 +6,9 @@ module.exports = {
       backgroundImage: {
         'gradient-120': 'linear-gradient(120deg, var(--tw-gradient-stops))',
       },
+      scale: {
+        '-100': '-1',
+    }
     },
     screens: {
       sm: '480px',
@@ -19,6 +22,7 @@ module.exports = {
       blue: '#a0d4e2',
       rose: '#c596a1',
       orange: '#d89561',
+      grey:'#808080',
     },
     height:{
       "45v":'50vh',
