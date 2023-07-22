@@ -1,11 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.svg" sizes="any" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Landing Page</title>
+    <title>Rails Meet</title>
   </head>
   <body>
+    <nav>
+      <ul
+        id="navigation-list"
+        class="list-none flex flex-row justify-around fixed w-screen py-5 bg-black text-aqua"
+      >
+        <li>
+          <a href="#section-hero" class="scroll-smooth font-bold">Hello</a>
+        </li>
+        <li>
+          <a href="#section-intro" class="scroll-smooth font-bold">About</a>
+        </li>
+        <li>
+          <a href="#section-events" class="scroll-smooth font-bold">Events</a>
+        </li>
+        <li>
+          <a href="#section-stats" class="scroll-smooth font-bold">Stats</a>
+        </li>
+        <li>
+          <a href="#section-contact" class="scroll-smooth font-bold">Contact</a>
+        </li>
+      </ul>
+    </nav>
     <section
       id="section-hero"
       class="w-screen md:h-90v flex flex-col md:flex-row justify-center"
@@ -185,6 +208,35 @@
           <h4 class="text-2xl md:text-4xl">Participants</h4>
         </div>
       </div>
+    </section>
+    <section
+      id="section-contact"
+      class="w-screen md:h-90v flex flex-col md:flex-row justify-center"
+    >
+      <div
+        class="flex flex-col justify-center items-center md:items-start w-full md:w-1/2 pt-20 px-5 md:px-10 xl:px-20 md:h-90v"
+      >
+        <h2
+          class="text-2xl md:text-5xl text-center md:text-left font-medium mb-4"
+        >
+          Do you have any Queries?
+        </h2>
+        <h4
+          class="text-2xl md:text-3xl text-center md:text-left font-medium mb-4"
+        >
+          Please contact us
+        </h4>
+        <button
+          class="my-4 font-bold border-2 border-solid border-black bg-black text-white hover:bg-white hover:text-black px-3 md:px-10 py-2 rounded-full"
+        >
+          CONTACT US
+        </button>
+      </div>
+      <div
+        class="flex flex-col justify-center items-center md:items-start w-full md:w-1/2 pt-20 px-5 md:px-10 xl:px-20 md:h-90v"
+      >
+      
+    </div>
     </section>
   </body>
 </html>
