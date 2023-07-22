@@ -19,7 +19,7 @@ mobileMenu.classList.add(
   'border-2',
   'border-black',
   'absolute',
-  'hidden',
+  'hidden'
 );
 menuContainer.appendChild(mobileMenu);
 
@@ -45,4 +45,18 @@ hamburgerMenu.onclick = () => {
 
 menuList.onclick = () => {
   closeMobileMenu();
+};
+
+const scrollTopBtn = document.getElementById('scrolltop-btn');
+scrollTopBtn.onclick = () => {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+};
+
+window.onscroll = () => {
+  if (document.body.scrollTop > 70 || document.documentElement.scrollTop > 70) {
+    scrollTopBtn.classList.remove('hidden');
+  } else {
+    scrollTopBtn.classList.add('hidden');
+  }
 };
