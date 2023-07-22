@@ -6,6 +6,7 @@ module.exports = {
   output: {
     filename: 'main.js',
     path: path.resolve(__dirname, 'dist'),
+    assetModuleFilename: 'src/images/Ruby_logo.svg'
   },
   plugins: [
     new HtmlWebpackPlugin({
@@ -15,7 +16,6 @@ module.exports = {
   mode: 'production',
   devServer: {
     static: './dist',
-    watchContentBase: true,
   },
   module: {
     rules: [
@@ -31,6 +31,10 @@ module.exports = {
           loader: 'babel-loader',
           options: { presets: ['@babel/preset-env'] },
         },
+      },
+      {
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        type: 'asset/resource',
       },
     ],
   },
