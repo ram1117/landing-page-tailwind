@@ -19,7 +19,7 @@ mobileMenu.classList.add(
   'border-2',
   'border-black',
   'absolute',
-  'hidden'
+  'hidden',
 );
 menuContainer.appendChild(mobileMenu);
 
