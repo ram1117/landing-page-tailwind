@@ -1,4 +1,4 @@
-import animateItems from './scripts/animations';
+import animateItems from './scripts/animations.js';
 import './style.css';
 
 const menuContainer = document.getElementById('burger-container');
@@ -21,7 +21,7 @@ mobileMenu.classList.add(
   'border-black',
   'absolute',
   'hidden',
-  'z-50'
+  'z-50',
 );
 menuContainer.appendChild(mobileMenu);
 

@@ -5,13 +5,14 @@
 /* stylelint-enable */
 
 #section-hero {
-  background: linear-gradient(
-    110deg,
-    #fff 5%,
-    #a0d4e2 30%,
-    #c596a1 85%,
-    #d89561 100%
-  );
+  background:
+    linear-gradient(
+      110deg,
+      #fff 5%,
+      #a0d4e2 30%,
+      #c596a1 85%,
+      #d89561 100%
+    );
 }
 
 #section-events {
@@ -27,6 +28,7 @@
     transform: scale(0.75);
     opacity: 0;
   }
+
   100% {
     transform: scale(1);
     opacity: 1;
@@ -36,7 +38,9 @@
 .text-animation {
   background: linear-gradient(to right, #c51912 20%, #000 50%, #c51912 80%);
   background-size: 200% auto;
+  /* stylelint-disable */
   background-clip: text;
+  /* stylelint-enable */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: shine 2s linear infinite;
@@ -58,13 +62,16 @@
   0% {
     transform: translateY(0);
   }
+
   50%,
   100% {
     transform: translateY(0);
   }
+
   25% {
     transform: translateY(-50px);
   }
+
   75% {
     transform: translateY(-25px);
   }
