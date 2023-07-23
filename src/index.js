@@ -1,3 +1,4 @@
+import animateItems from './scripts/animations';
 import './style.css';
 
 const menuContainer = document.getElementById('burger-container');
@@ -9,7 +10,7 @@ mobileMenu.id = 'mobile-nav-list';
 mobileMenu.dataset.isopen = '0';
 mobileMenu.classList.add(
   'list-none',
-  'w-4/5',
+  'w-full',
   'h-45v',
   'flex',
   'flex-col',
@@ -20,6 +21,7 @@ mobileMenu.classList.add(
   'border-black',
   'absolute',
   'hidden',
+  'z-50'
 );
 menuContainer.appendChild(mobileMenu);
 
@@ -53,10 +55,17 @@ scrollTopBtn.onclick = () => {
   document.documentElement.scrollTop = 0;
 };
 
+const eventSection = document.getElementById('section-events');
+const statsSection = document.getElementById('section-stats');
+const contactSection = document.getElementById('section-contact');
 window.onscroll = () => {
   if (document.body.scrollTop > 70 || document.documentElement.scrollTop > 70) {
     scrollTopBtn.classList.remove('hidden');
   } else {
     scrollTopBtn.classList.add('hidden');
   }
+
+  animateItems(eventSection);
+  animateItems(statsSection);
+  animateItems(contactSection);
 };
