@@ -18,3 +18,65 @@
 #section-events {
   background: linear-gradient(110deg, #7dc1d5 25%, #20768e 55%, #c596a1 100%);
 }
+
+.events-animate {
+  animation: fadein 1s ease-in forwards;
+}
+
+@keyframes fadein {
+  0% {
+    transform: scale(0.75);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.text-animation {
+  background: linear-gradient(to right, #c51912 20%, #000 50%, #c51912 80%);
+  background-size: 200% auto;
+  /* stylelint-disable */
+  background-clip: text;
+  /* stylelint-enable */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 2s linear infinite;
+}
+
+@keyframes shine {
+  to {
+    background-position: 200% center;
+  }
+}
+
+.btn-animation {
+  background: linear-gradient(to right, #c51912 20%, #000 50%, #c51912 80%);
+  background-size: 200% auto;
+  animation: shine 4s linear infinite;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+
+  50%,
+  100% {
+    transform: translateY(0);
+  }
+
+  25% {
+    transform: translateY(-50px);
+  }
+
+  75% {
+    transform: translateY(-25px);
+  }
+}
+
+.bounce-once {
+  animation: bounce 0.5s linear;
+}

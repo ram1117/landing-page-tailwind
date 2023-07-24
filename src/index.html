@@ -7,7 +7,7 @@
     <title>Rails Meet</title>
   </head>
   <body>
-    <div id="burger-container" class="absolute top-5 left-5 w-full sm:hidden">
+    <div id="burger-container" class="absolute top-5 left-5 w-4/5 sm:hidden">
       <button id="burger-menu" class="sm:hidden">
         <svg
           class="stroke-black fill-black"
@@ -19,7 +19,7 @@
         </svg>
       </button>
     </div>
-    <nav class="hidden sm:block">
+    <nav class="hidden sm:block z-50 fixed">
       <ul
         id="navigation-list"
         class="list-none flex flex-row justify-around fixed w-screen py-5 bg-black text-white"
@@ -61,7 +61,10 @@
         </li>
       </ul>
     </nav>
-    <button id="scrolltop-btn" class="fixed bottom-10 right-10 hidden motion-safe:animate-pulse">
+    <button
+      id="scrolltop-btn"
+      class="fixed bottom-10 right-10 hidden motion-safe:animate-pulse z-50"
+    >
       <svg
         class="stroke-aqua fill-aqua"
         width="72"
@@ -84,17 +87,17 @@
         class="flex flex-col justify-center items-center md:items-start w-full md:w-1/2 px-5 md:px-10 xl:px-20"
       >
         <p
-          class="text-2xl font-medium p-0 my-2 w-full text-center md:text-left"
+          class="text-2xl font-medium p-0 my-2 w-full text-center md:text-left text-animation"
         >
           RAILS
         </p>
         <h2
-          class="text-3xl md:text-7xl font-bold p-0 my-2 w-full text-center md:text-left"
+          class="text-3xl md:text-7xl font-bold p-0 my-2 w-full text-center md:text-left text-animation"
         >
           DEVELOPERS' MEET
         </h2>
         <h2
-          class="text-3xl md:text-7xl font-bold p-0 my-2 w-full text-center md:text-left"
+          class="text-3xl md:text-7xl font-bold p-0 my-2 w-full text-center md:text-left text-animation"
         >
           BERLIN 2023
         </h2>
@@ -108,13 +111,13 @@
         <img
           src="./images/Ruby_logo.svg"
           alt="ruby on rails gem logo"
-          class="w-1/3 h-1/3 md:w-2/5 md:h-2/5 xl:w-1/3 xl:h-1/3"
+          class="w-1/3 h-1/3 md:w-2/5 md:h-2/5 xl:w-1/3 xl:h-1/3 bounce-once"
         />
       </div>
     </section>
     <section
       id="section-intro"
-      class="bg-black text-white w-screen flex flex-col md:flex-row justify-center py-16 md:py-40"
+      class="scroll-animate bg-black text-white w-screen flex flex-col md:flex-row justify-center py-16 md:py-40"
     >
       <div
         class="flex flex-col justify-center items-center md:items-start w-full md:w-1/2 pt-20 px-5 md:px-10 xl:px-20"
@@ -124,7 +127,7 @@
         </h2>
         <div class="border-2 border-grey border-solid my-5 w-full"></div>
         <img
-        src="./images/Ruby_logo.svg"
+          src="./images/Ruby_logo.svg"
           alt="ruby on rails gem logo"
           class="hidden md:block my-10 w-1/5 h-1/5 transform -scale-x-100"
         />
@@ -153,12 +156,8 @@
       <div
         class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 md:h-4/5"
       >
-        <div class="md:p-5">
-          <img
-            src="./images/2.png"
-            alt="mic image"
-            class="w-full m-auto"
-          />
+        <div class="md:p-5 m-0 md:m-5 animation-item opacity-0">
+          <img src="./images/2.png" alt="mic image" class="w-full m-auto" />
           <h4 class="text-2xl md:text-3xl text-left font-bold my-2">
             Seminars
           </h4>
@@ -166,12 +165,8 @@
             More than 10 guest speakers
           </p>
         </div>
-        <div class="md:p-5">
-          <img
-            src="./images/3.png"
-            alt="laptop image"
-            class="w-full m-auto"
-          />
+        <div class="md:p-5 m-0 md:m-5 animation-item opacity-0">
+          <img src="./images/3.png" alt="laptop image" class="w-full m-auto" />
           <h4 class="text-2xl md:text-3xl text-left font-bold my-2">
             Hackathons
           </h4>
@@ -179,7 +174,7 @@
             Fun challenges and exciting prizes
           </p>
         </div>
-        <div class="md:p-5">
+        <div class="md:p-5 m-0 md:m-5 animation-item opacity-0">
           <img
             src="./images/1.png"
             alt="mobile phone image"
@@ -207,7 +202,7 @@
       <div
         class="w-4/5 mx-auto my-16 md:my-36 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10"
       >
-        <div class="flex flex-col items-center">
+        <div class="flex flex-col items-center animation-item opacity-0">
           <svg
             class="stroke-aqua fill-aqua my-10"
             width="125"
@@ -222,7 +217,7 @@
           <h4 class="text-2xl md:text-4xl">>75</h4>
           <h4 class="text-2xl md:text-4xl">Speakers</h4>
         </div>
-        <div class="flex flex-col items-center">
+        <div class="flex flex-col items-center animation-item opacity-0">
           <svg
             class="stroke-aqua fill-aqua my-10"
             width="125"
@@ -237,7 +232,7 @@
           <h4 class="text-2xl md:text-4xl">>25,000</h4>
           <h4 class="text-2xl md:text-4xl">in Prizes</h4>
         </div>
-        <div class="flex flex-col items-center">
+        <div class="flex flex-col items-center animation-item opacity-0">
           <svg
             class="stroke-aqua fill-aqua my-10"
             width="125"
@@ -272,7 +267,7 @@
           Please contact us
         </h4>
         <button
-          class="my-4 font-bold border-2 border-solid border-black bg-black text-white hover:bg-white hover:text-black px-3 md:px-10 py-2 rounded-full"
+          class="my-4 font-bold border-2 border-solid border-black bg-black text-white px-3 md:px-10 py-2 rounded-full btn-animation"
         >
           CONTACT US
         </button>
@@ -280,7 +275,7 @@
       <div
         class="flex flex-col justify-center items-center md:items-start w-full md:w-1/2 pt-20 px-5 md:px-10 xl:px-20"
       >
-        <div class="my-8">
+        <div class="my-8 animation-item opacity-0">
           <h5
             class="text-2xl md:text-3xl text-center md:text-left font-bold mb-4"
           >
@@ -290,7 +285,7 @@
             +49-XXXX-YYYY-ZZ
           </h6>
         </div>
-        <div class="my-8">
+        <div class="my-8 animation-item opacity-0">
           <h5
             class="text-2xl md:text-3xl text-center md:text-left font-bold mb-4"
           >
@@ -301,7 +296,7 @@
             @rubyorg.com
           </h6>
         </div>
-        <div class="my-8 w-1/3">
+        <div class="my-8 w-1/3 animation-item opacity-0">
           <h5
             class="text-2xl md:text-3xl text-center md:text-left font-bold mb-4"
           >
