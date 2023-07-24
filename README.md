@@ -6,6 +6,9 @@ An event landing page I created using HTML5, CSS3, JavaScript and Tailwind CSS
 
 Landing page has information about the event. I used Tailwind CSS for styling the web page. I added animations that get triggered when user scrolls through the page.
 
+## Live Demo
+A live demo is hosted on [Github pages](https://ram1117.github.io/landing-page-tailwind/dist/)
+
 ## Getting Started
 
 ### Dependencies
